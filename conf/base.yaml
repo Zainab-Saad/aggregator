@@ -1,0 +1,5 @@
+num_rounds: 5
+num_clients: 2
+num_clients_per_round_fit: 2
+num_clients_per_round_eval: 2
+# config_fit -- configurations that aggregator sets for all clients
