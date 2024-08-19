@@ -8,7 +8,8 @@ import flwr as fl
 
 from src.utils import (
     evaluate_metrics_aggregation,
-    config_func
+    config_func,
+    SERVER_ADDRESS
 )
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
@@ -25,7 +26,7 @@ def main(cfg: DictConfig):
     )
 
     history = fl.server.start_server(
-        server_address="0.0.0.0:8080",
+        server_address=SERVER_ADDRESS,
         config=fl.server.ServerConfig(cfg.num_rounds),
         strategy=strategy
     )

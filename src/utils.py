@@ -13,3 +13,5 @@ def config_func(rnd: int) -> Dict[str, str]:
     return {
         "global_round": str(rnd)
     }
+
+SERVER_ADDRESS = "0.0.0.0:8081"
