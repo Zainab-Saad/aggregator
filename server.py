@@ -6,7 +6,7 @@ from hydra.core.hydra_config import HydraConfig
 from omegaconf import DictConfig, OmegaConf
 import flwr as fl
 
-from src.utils import (
+from util.server_utils import (
     evaluate_metrics_aggregation,
     config_func,
     SERVER_ADDRESS
