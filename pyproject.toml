@@ -1,7 +1,8 @@
 [project]
 name = "kepler-fl-aggregator"
+version = "0.1.0"
 
-dependencies[
-    "flwr>=1.9.0"
+dependencies = [
+    "flwr>=1.9.0",
     "hydra-core>=1.3.2"
 ]
